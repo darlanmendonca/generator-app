@@ -1,0 +1,10 @@
+doctype html
+html(ng-app='<%= applicationSlug %>')
+  head
+    title <%= applicationName %>
+    link(rel='stylesheet', href='public/styles/app.css')
+  body
+    div(ui-view="main")
+
+    script(src='public/scripts/vendor.js')
+    script(src='public/scripts/app.js')
